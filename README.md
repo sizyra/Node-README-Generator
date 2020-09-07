@@ -1,44 +1,25 @@
-# Node-README-Generator
 
-## Description
-This application allows the user to generate a fully functional, formatted README.md file using a command-line application. The user will be prompted for the README project's title, description, a table of contents, installation instructions, usage, licensing, contributors, tests, and questions.  
+    # Node README Generator
 
-## Links
-To the GitHub repository:
-https://github.com/sizyra/Node-README-Generator 
+    ## Description
+        This app allows the user to generate a new README file. It will prompt the user for information and will paste said information in to the newly created file with the proper formatting.
 
-## Final Product
+    ## Table of Contents
+        [Description]()
 
+    ## Installation
+        First, clone the repository to a local file with this link: https://github.com/sizyra/Node-README-Generator.git \n Then, open the local file in your command-line program. Enter "npm install" to download all dependencies. Once that is installed, simply write "node index.js" in the local repository and answer all the prompts.
 
-## Technologies Used
-* JavaScript
-* jQuery
-* Node.js
+    ## Usage
+        Run "node index.js" in a command line from the local repository. It will prompt the user for information that will be used to create the README, such as project title and description. Simply answer the prompts and the README generator will do the rest.
 
-## License
-MIT License
+    ## License
+        
+    ## Contributing
+        No outside contributions will be accepted, but feel free to copy this project and make your own version with any additions you like.
 
-Copyright (c) 2020 Samuel Zyra
+    ## Tests
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-## Contributors & Contact Info
-Samuel Zyra
-* sisaaczyra@gmail.com
-* https://linkedin.com/samuel-i-zyra 
+    ## Questions
+        undefined
+    

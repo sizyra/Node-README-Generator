@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
+const markdown = require("markdown-js");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -84,7 +85,7 @@ async function init() {
 
         const readMe = createReadMe(responses);
 
-        await writeFileAsync("README.md", "utf8");
+        await writeFileAsync("README.md", readMe);
 
         console.log("Successfully created new README.md file.");
     } catch(err) {

@@ -30,12 +30,12 @@ function userPrompts() {
         {
             type: "input",
             name: "license",
-            message: "What license does this projet operate under?"  
+            message: "What license does this project operate under?"  
         },
         {
             type: "input",
             name: "contributing",
-            message: "List contributor name(s)."  
+            message: "How can others contribute to this project, if at all?"  
         },
         {
             type: "input",
@@ -43,9 +43,53 @@ function userPrompts() {
             message: ""  
         },
         {
-            type: "",
-            name: "",
-            message: ""  
+            type: "input",
+            name: "faq",
+            message: "List any common issues and their solutions here."  
         },
     ])
 }
+
+function createReadMe(responses) {
+    return `
+    # ${responses.title}
+
+    ## Description
+        ${responses.description}
+
+    ## Table of Contents
+        [Description]()
+
+    ## Installation
+        ${responses.installation}
+
+    ## Usage
+        ${responses.usage}
+
+    ## License
+        
+    ## Contributing
+        ${responses.contributing}
+
+    ## Tests
+
+    ## Questions
+        ${responses.questions}
+    `
+}
+
+async function init() {
+    try {
+        const responses = await userPrompts();
+
+        const readMe = createReadMe(responses);
+
+        await writeFileAsync("README.md", "utf8");
+
+        console.log("Successfully created new README.md file.");
+    } catch(err) {
+        console.log(err);
+    }
+}
+
+init();

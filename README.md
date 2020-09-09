@@ -13,10 +13,10 @@ Using this command-line application, a user can generate a fully-formated README
 7. [Questions](#Questions)
 
 ## Installation
-First, clone the GitHub repository to a local folder using this link (https://github.com/sizyra/Node-README-Generator.git). Then, open the local repository in your command-line program. Run "npm install" to install all required dependencies.
+First, clone the GitHub repository to a local folder using this link (https://github.com/sizyra/Node-README-Generator.git). Then, open the local repository in your command-line interface. Run "npm install" to install all required dependencies.
 
 ## Usage
-Once fully installed, open the local repository in your command-line program. Run "node index.js" and answer all ensuing prompts as simply as possible, or as you'd like them to read in your README file.
+Once fully installed, open the local repository in your command-line interface. Run "node index.js" and answer all ensuing prompts as simply as possible, or as you'd like them to read in your README file.
 
 ## License
 MIT license [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

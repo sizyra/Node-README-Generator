@@ -1,25 +1,32 @@
 
-    # Node README Generator
+# Node README Generator
 
-    ## Description
-        This app allows the user to generate a new README file. It will prompt the user for information and will paste said information in to the newly created file with the proper formatting.
+## Description
+    Using this command-line application, a user can generate a fully-formatted README just by answering a small handful of prompts. 
 
-    ## Table of Contents
-        [Description]()
+## Table of Contents
+    [Description](./README.md/##Description)
+    [Installation](./README.md/##Installation)
+    [Usage](./README.md/##Usage)
+    [License](./README.md/##License)
+    [Contributing](./README.md/##Contributing)
+    [Tests](./README.md/##Tests)
+    [Questions](./README.md/##Questions)
 
-    ## Installation
-        First, clone the repository to a local file with this link: https://github.com/sizyra/Node-README-Generator.git \n Then, open the local file in your command-line program. Enter "npm install" to download all dependencies. Once that is installed, simply write "node index.js" in the local repository and answer all the prompts.
+## Installation
+    Clone the GitHub repository using this link (https://github.com/sizyra/Node-README-Generator.git) then run "npm install" in your command-line program while inside that repository.
 
-    ## Usage
-        Run "node index.js" in a command line from the local repository. It will prompt the user for information that will be used to create the README, such as project title and description. Simply answer the prompts and the README generator will do the rest.
+## Usage
+    Using node, simply type "node index.js" into your command-line interface once all installations are complete. Answer all prompts given, and the generator will create a new README.md file inside that repository. WARNING: It will overwrite any existing files with the name "README.md"
 
-    ## License
-        
-    ## Contributing
-        No outside contributions will be accepted, but feel free to copy this project and make your own version with any additions you like.
+## License
+    MIT
 
-    ## Tests
+## Contributing
+    Contributions will not be accepted, but users may copy these programs and files and use them to create their own versions.
 
-    ## Questions
-        undefined
-    
+## Tests
+    None.
+
+## Questions
+    None.

@@ -10,7 +10,7 @@ node index.js
 
 Because this is a command-line application that won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates the functionality of your application. Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer.
 
-## User Story
+## User
 
 ```
 AS A developer
@@ -60,7 +60,7 @@ THEN I am taken to the corresponding section of the README
 
 * The generated README includes 1 badge that's specific to the repository.
 
-
+[User Story](./Instructions.md/##_User)
 ## Submission Requirements
 
 Because this is a CLI App, there will be no need to deploy it to Heroku. This time, though, you need to include a video showing us that you got the app working with no bugs. You should include a link to the video in your application's `README.md` file.

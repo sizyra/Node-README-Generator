@@ -1,7 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-const markdown = require("markdown-js");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -34,9 +33,19 @@ function userPrompts() {
             message: "Who owns this product?"
         },
         {
-            type: "input",
+            type: "list",
             name: "license",
-            message: "What license does this project operate under? Ex: 'MIT'"  
+            message: "What license does this project operate under?",
+            choices: [
+                'Apache License 2.0 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+                'BSD 3-Clause "New" or "Revised" license [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
+                'BSD 2-Clause "Simplified" or "FreeBSD" license [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)',
+                'GNU General Public License (GPL) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
+                'GNU Library or "Lesser" General Public License (LGPL) [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)',
+                'MIT license [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+                'Mozilla Public License 2.0 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+                'Eclipse Public License version 2.0 [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-2.0)'
+            ]  
         },
         {
             type: "input",
@@ -57,38 +66,37 @@ function userPrompts() {
 }
 
 function createReadMe(responses) {
-    return `
-# ${responses.title}
+    return `# ${responses.title}
 
 ## Description
-    ${responses.description}
+${responses.description}
 
 ## Table of Contents
-    [Description](./README.md/##Description)
-    [Installation](./README.md/##Installation)
-    [Usage](./README.md/##Usage)
-    [License](./README.md/##License)
-    [Contributing](./README.md/##Contributing)
-    [Tests](./README.md/##Tests)
-    [Questions](./README.md/##Questions)
+1. [Description](#Description)
+2. [Installation](#Installation)
+3. [Usage](#Usage)
+4. [License](#License)
+5. [Contributing](#Contributing)
+6. [Tests](#Tests)
+7. [Questions](#Questions)
 
 ## Installation
-    ${responses.installation}
+${responses.installation}
 
 ## Usage
-    ${responses.usage}
+${responses.usage}
 
 ## License
-    ${responses.license}
+${responses.license}
 
 ## Contributing
-    ${responses.contributing}
+${responses.contributing}
 
 ## Tests
-    ${responses.tests}
+${responses.tests}
 
 ## Questions
-    ${responses.questions}
+${responses.questions}
 `
 }
 

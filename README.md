@@ -32,4 +32,4 @@ No issues.
 
 
 ## Video of App
-!Walkthrough(/Node_README_Gen_Walk-through.mp4)
+http://somup.com/cYQQnQXTZj
